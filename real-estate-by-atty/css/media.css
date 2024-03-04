@@ -1,0 +1,94 @@
+
+:root{
+    --primary-heading:"Roboto", sans-serif;
+    --secondary-heading:"Playfair Display", serif;
+    --tertiary-heading: "Playball", cursive;
+
+    --primary-color:#32291E;
+    --secondary-color:#463B30;
+    --brown1:#7D6B5A;
+    --brown2:#BDA584;
+    --white:#fff;
+    --body-color:#1a1a1a;
+}
+
+
+@media only screen 
+and (max-width: 1400px){
+
+    header{padding:0 20px;}
+    #banner{padding:0 20px;}
+    #middle{padding:0 20px;}
+    #main_area{padding:0 20px;}
+    #bottom1{padding:0 20px;}
+    #bottom2{padding:0 20px;}
+    #bottom3{padding:0 20px;}
+    #bottom4{padding:0 20px;}
+    .footer_top{padding:0 20px;}
+    .footer_btm{padding:0 20px;}
+
+    .btm3_con { min-height: 425px; }
+    #form_message { width: 790px; }
+    #form_message .formm { width: 43%;}
+}
+
+@media only screen 
+and (max-width: 1300px){
+
+    .page_nav ul li a { margin: 0; }
+    .header_info ul { flex-direction: column; align-items: flex-end; }
+    .header_info ul li:first-child a{width:244px;}
+
+    .slider { top: -160px; }
+    .bnr_con:before{top:-160px;}
+
+    .page_nav { left: 0; }
+
+    #form_message { width: 690px; }
+    
+}
+
+@media only screen 
+and (max-width: 1200px){
+   
+    .bnr_info p { margin: 20px 0 20px; }
+    .btm2_boxes section { min-height: auto; padding: 44px 80px 40px 50px; }
+
+
+    .btm3_info{text-align: center; width: 100%;}
+    #form_message { position:static; margin-top:20px; width: 100%; justify-content: center;}
+
+    #form_message .formm { width: 45%; }
+.copyright { margin-top: 30px; text-align: center; position:static;}
+.social_media { text-align: center; margin-top: 20px; position:static; }
+.footer_nav { text-align: center; }
+}
+
+
+@media only screen 
+and (max-width: 1090px){
+
+}
+
+
+@media only screen 
+and (max-width: 1024px){
+    main { width: 100%; }
+}
+
+
+@media only screen 
+and (max-width: 1000px){
+
+}
+
+@media only screen 
+and (max-width: 800px){
+
+}
+
+@media only screen 
+and (max-width: 600px){
+
+}
+
