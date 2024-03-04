@@ -199,6 +199,7 @@ header{background:transparent;position:relative;z-index:10;padding:0 10px;}
  .social_media ul{}
  .social_media ul li{font-family:var(--primary-heading); font-size:24px; color:var(--white);display: inline-block; vertical-align:middle; padding:0 6px;}
  .social_media ul li figure{max-width:50px;}
+ .social_media ul li figure:hover{opacity:0.5;}
 
 
  .footer_btm{padding:0 10px;}
