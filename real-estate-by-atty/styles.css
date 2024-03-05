@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+*, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; image-rendering: -webkit-optimize-contrast;}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,9 +46,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-img{width:100%;}
 a{text-decoration: none;}
-h1, h2, h3, span{line-height:100%;}
+h1, h2, h3, span, small{line-height:100%;}
+
+img{max-width: 100%; vertical-align: top; image-rendering: -webkit-optimize-contrast;}
+textarea { resize:vertical; }
+iframe{ border: none; width: 100%;}
+ul, h1, h2, h3, h4{ margin:0; padding:0; list-style:none; }
+strong , b{ font-weight: bold;}
+em, i{font-style: italic;}
+input[type="submit"]{cursor: pointer;}
+a[href^="tel:"],a[href^="mailto:"]{color: inherit!important; text-decoration: none;font-weight:inherit;}
+a[href^="mailto:"]:hover{text-decoration-line: underline;font-weight:inherit;}
+
+button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
+input:not([type='radio']):not([type='checkbox']), textarea, select{-webkit-appearance: none;}
+form, label {-webkit-text-size-adjust: 100%;}
+mark {background-color: transparent;}
 
 /*1366 by 768 - my laptop's resolution*/
 :root{
@@ -163,8 +178,8 @@ header{background:transparent;position:relative;z-index:10;padding:0 10px;}
   .btm2_info p{font-size:18px!important; margin: 32px 0 87px;}
 
   .btm2_boxes{display:flex; justify-content: center; gap:12px; column-gap:30px;}
-  .btm2_boxes section{width:48%; max-width:460px; min-height:190px; border:1px solid #33333354; padding: 44px 80px 20px 100px; position:relative;}
-  .btm2_boxes section:before{position:absolute;bottom: 55px; right: 60px; content:url(images/quote.png);}
+  .btm2_boxes section{width:48%; max-width:530px; min-height:190px; border:1px solid #33333354; padding: 44px 80px 20px 100px; position:relative;}
+  .btm2_boxes section:before{position:absolute;bottom: 55px; right: 30px; content:url(images/quote.png);}
   .btm2_boxes section h2{font-family:var(--secondary-heading); font-size:20px; color:#000; font-weight:700;}
   .btm2_boxes section h2 span{display:block; color:#00000079;}
   .btm2_boxes section p{font-family:var(--secondary-heading); font-size:24px; color:#333; font-style: italic; line-height:26px; font-weight:600;}
@@ -174,20 +189,21 @@ header{background:transparent;position:relative;z-index:10;padding:0 10px;}
   .testi_holder figure img{border-radius:50%; outline: 1px solid #000; outline-offset: 5px;}
 
  #bottom3{ padding:0 10px; }
- .btm3_con{padding: 130px 0 20px; min-height:365px;}
+ .btm3_con{padding: 130px 0 20px; min-height:435px;}
 
  .btm3_info{width: 430px;}
  .btm3_info h2{font-size:50px; margin-bottom:20px;}
  .btm3_info h2 span{}
  
  #form_message{display:flex; justify-content:space-between ; flex-wrap:wrap; row-gap:10px; gap:12px; width: 860px; position: absolute; right: 0; top:80px;}
- #form_message .formm{width:44%; height:48px; border:1px solid #ccc; border-radius:50px; background:var(--white); font-family:var(--primary-heading); font-size:24px; color:#575757; padding:10px 20px;} 
+ #form_message .formm{width:49%; height:58px; border:1px solid #ccc; border-radius:50px; background:var(--white); font-family:var(--primary-heading); font-size:24px; color:#5757579c; padding:10px 20px;} 
 
- #form_message .formme{width:100%; height:118px; border:1px solid #ccc; resize:none; border-radius:50px; background:var(--white); font-family:var(--primary-heading); font-size:24px; color:#575757; padding:10px 20px;} 
+ #form_message .formme{width:100%; height:118px; border:1px solid #ccc; resize:none; border-radius:50px; background:var(--white); font-family:var(--primary-heading); font-size:24px; color:#575757; padding:40px 20px;} 
  #form_message .consent{font-family:var(--primary-heading); font-size:16px; color:#827F7F; margin: 20px 0 20px;}
  #form_message button{border:none;}
  #form_message textarea{ padding:20px 15px; font-family:var(--primary-heading); font-size:16px; color:#827F7F; }
 
+ #form_message .form_btn{border:none;}
 
  footer{background:var(--secondary-color);}
  .footer_top{padding:0 10px; }

@@ -1,3 +1,6 @@
+
+
+
 /*slider image*/
 
 var myIndex = 0;
@@ -38,3 +41,24 @@ function myFunction() {
       }
     }
   }
+
+
+
+  if ($('#bottom1').length >= 1) {
+    var fixbtm = $('#bottom1').offset().top;
+    if (fixbtm <= windowScroll){
+      $("#bottom1").css({
+        'background-attachment' : 'fixed'
+      });
+    } else {
+        $("#bottom1").css({
+        'background-attachment' : 'unset',
+        'background-position' : 'center top'
+        });
+      }
+    }
+
+
+ 
+    new WOW().init();
+ 
