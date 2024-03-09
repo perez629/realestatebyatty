@@ -136,15 +136,23 @@ header{background:transparent;position:relative;z-index:10;padding:0 10px;}
 
 .middle_boxes{margin:0 auto;display:flex; justify-content: center; gap:12px;}
 .middle_boxes section{text-align: center; width: 100%; max-width:800px; min-height:600px; position:relative; margin: 0 auto;}
-.middle_boxes section h2{font-family:var(--secondary-heading); font-size:60px; color:var(--white); margin-bottom:10px;}
+.middle_boxes section h2{font-family:var(--secondary-heading); font-size:45px; color:var(--white); margin-bottom:10px;}
 .middle_boxes section h2 span{display:block; font-size:28px; font-family:var(--primary-heading); margin-top: 20px;}
 .middle_boxes section h3{font-family:var(--primary-heading); font-size:35px; color:var(--white); font-weight:700;}
 .middle_boxes section a{position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%;}
 
-.middle_boxes_info{position:absolute; left:0; right:0; margin:0 auto; bottom:67px;}
+.middle_boxes_info{position:absolute; left:0; right:0; margin:0 auto; bottom:67px; background: #00000073; padding: 10px;}
+.middle_boxes section:hover .middle_boxes_info{background:#000;}
+/* 
+.middle_boxes section:first-child{background:url(images/s2.png)center no-repeat;filter:grayscale(1);}
+.middle_boxes section:nth-child(2){background:url(images/s1.png)center no-repeat;filter:grayscale(1);}
+.middle_boxes section:nth-child(3){background:url(images/s3.png)center no-repeat;filter:grayscale(1);} */
 
+.middle_boxes figure{width:100%; position:absolute; left:0; right:0; top:0; bottom:0; filter:grayscale(1);}
+.middle_boxes figure img{height:100%;}
 
-.middle_boxes section:first-child{background:url(images/s1.png)center no-repeat;filter:grayscale(1);}
+.middle_boxes section:hover figure{filter:none;}
+
 .middle_boxes section:hover{filter: none; transition:0.5s;}
 
 .middle_btn{}
@@ -181,7 +189,7 @@ header{background:transparent;position:relative;z-index:10;padding:0 10px;}
   .btm2_info p{font-size:18px!important; margin: 32px 0 87px;}
 
   .btm2_boxes{display:flex; justify-content: center; gap:12px; column-gap:30px;}
-  .btm2_boxes section{width:48%; max-width:530px; min-height:190px; border:1px solid #33333354; padding: 44px 80px 20px 100px; position:relative; box-shadow: 5px 5px 40px 40px rgba(0, 0, 0, 0.02); background: var(--white);}
+  .btm2_boxes section{width:100%; max-width:530px; min-height:190px; border:1px solid #33333354; padding: 44px 80px 20px 100px; position:relative; box-shadow: 5px 5px 40px 40px rgba(0, 0, 0, 0.02); background: var(--white);}
   .btm2_boxes section:before{position:absolute;bottom: 55px; right: 30px; content:url(images/quote.png);}
   .btm2_boxes section h2{font-family:var(--secondary-heading); font-size:20px; color:#000; font-weight:700;}
   .btm2_boxes section h2 span{display:block; color:#00000079;}
@@ -238,7 +246,83 @@ header{background:transparent;position:relative;z-index:10;padding:0 10px;}
 
 
  .owl-nav {font-size: 0; top: 50%; transform:translate(0,-50%); z-index: 50; display: block; position:absolute; width: 100%;}
-.owl-prev{background: url(images/icon_prev.png) no-repeat center top; display:inline-block; width: 35px; height: 43px;position: absolute; top: 0; left: 15px;}
+.owl-prev{background: url(images/icon_prev.png) no-repeat center top; display:inline-block; width: 44px; height: 44px;position: absolute; top: 0; left: -80px;}
 .owl-prev:hover {opacity:0.7;}
-.owl-next {background: url(images/icon_next.png) no-repeat center top; display:inline-block; width: 35px; height: 43px; position: absolute; top: 0; right: 15px;}
+.owl-next {background: url(images/icon_next.png) no-repeat center top; display:inline-block; width: 44px; height: 44px; position: absolute; top: 0; right: -80px;}
 .owl-next:hover {opacity:0.7;}
+
+/*NON-HOME STYLING HERE*/
+
+#banner_non_home{margin-top:-124px;position:relative;}
+#banner_non_home:before{content:''; width:1920px; left:50%; transform:translateX(-50%); overflow: hidden; height:100%; background:rgba(0, 0, 0, 0.5); position:absolute; z-index:1;}
+#banner_non_home figure{position:relative; left:50%; transform:translateX(-50%); width:1920px;}
+#banner_non_home h3{text-align:center; font-family:var(--secondary-heading); font-size:50px; color:var(--white); line-height:100%; position:absolute; bottom:0px;left:0; right:0; margin:0 auto; padding:10px 0;z-index: 100;}
+#banner_non_home h3:before{content:''; width:100%; background:var(--brown1); height:100%; position:absolute; left:0; right:0;top:50%; transform:translateY(-50%);z-index: -1;}
+
+.main_sale{}
+.main_sale h2{text-align: center;}
+.sale_h2{margin-bottom: 40px;}
+
+
+/*TABS HERE*/
+
+ /* Style the tab */
+ .tab {
+  overflow: hidden;
+ 
+  display: flex;
+justify-content: center;
+column-gap: 20px;
+margin-bottom:40px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+ border-radius:50px;
+ border:1px solid #7D6B5A;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width:fit-content;height:55px; text-align: center;
+  font-family:var(--primary-heading); font-size:20px; color:var(--brown1);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background:var(--brown2); color:var(--white);border:1px solid var(--brown2);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background:var(--brown2); color:var(--white); border:1px solid var(--brown2);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+ 
+  border-top: none;
+} 
+
+/*tab contents styling*/
+.tabcontent_lot{display: flex; justify-content: space-between; gap:12px; flex-wrap:wrap;}
+.tabcontent_condo{display: flex; justify-content: space-between; gap:12px; flex-wrap:wrap;}
+.tabcontent_house{display: flex; justify-content: space-between; gap:12px; flex-wrap:wrap;}
+.tabcontent_commercial{display: flex; justify-content: space-between; gap:12px; flex-wrap:wrap;}
+
+
+.tabcontent section{text-align: center; width:24%; max-width:320px; position:relative; border: 1px solid #ccc;}
+.tabcontent section figure{width:100%; overflow: hidden;}
+.tabcontent section figure img{height:254px; object-fit: cover;}
+.tabcontent section a{position:absolute; width:100%; height:100%; left:0; right:0; top:0; bottom:0;}
+
+.tabcontent section:hover figure img{transform:scale(1.2);}
+.tabcontent section:hover small{color:var(--primary-color); background:var(--brown2);}
+
+.tabcontent section h2{font-family:var(--secondary-heading); font-size:24px; font-weight:600; color:var(--primary-color);}  
+.tabcontent section h2 span{display:block; font-family:var(--primary-heading); font-size:18px;color:var(--body-color); font-weight:normal; margin-top: 5px;}
+.tabcontent section small{font-family:var(--primary-heading); font-size:24px; font-weight:700; color:var(--white); text-align: center; background:var(--primary-color); width:100%; padding:10px; position:absolute;bottom:0; left:0; right:0; margin:0 auto;}
+
+.tab_infos { padding-bottom: 60px; padding-top: 10px;}
+

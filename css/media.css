@@ -11,7 +11,14 @@
     --white:#fff;
     --body-color:#1a1a1a;
 }
+@media only screen 
+and (max-width: 1500px){
+    .owl-nav { top: unset; transform: none; bottom: -68px; text-align: center;}
+    .owl-next{position:static;margin:0 5px;}
+    .owl-prev{position:static; margin:0 5px;}
 
+    .middle_boxes { margin: 0 auto 90px;}
+}
 
 @media only screen 
 and (max-width: 1400px){
@@ -63,6 +70,8 @@ and (max-width: 1200px){
 .copyright { margin-top: 30px; text-align: center; position:static;}
 .social_media { text-align: center; margin-top: 20px; position:static; }
 .footer_nav { text-align: center; }
+
+.middle_boxes section h2 { font-size: 40px; }
 }
 
 
@@ -125,10 +134,20 @@ and (max-width: 1000px){
     .btm2_boxes section{width:100%;}
 
     #form_message .formm { width: 100%; }
+
+    .tabcontent section { width: 48%; }
+    .tabcontent_lot { justify-content: center; }
+    .tabcontent_condo { justify-content: center; }
+    .tabcontent_house { justify-content: center; }
+    .tabcontent_commercial { justify-content: center; }
+
 }
 
 @media only screen 
 and (max-width: 800px){
+
+    .tab button { width: 48%; }
+    .tab { flex-wrap: wrap; row-gap: 20px; }
 
 }
 
@@ -155,5 +174,9 @@ and (max-width: 600px){
 
     .copyright small{display:block; padding:0;}
     .copyright small:before{display:none;}
+
+    .tabcontent section { width: 100%; }
+
+    .tab button { width: 100%; }
 }
 

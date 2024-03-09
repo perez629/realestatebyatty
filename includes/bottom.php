@@ -13,8 +13,8 @@
                 <p class="body_par">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p> 
             </div>
 
-            <div class="btm2_boxes">
-                <section class="wow fadeInLeft" data-wow-duration="3000ms">
+            <div class="btm2_boxes owl-carousel">
+                <section class="wow zoomIn" data-wow-duration="3000ms">
                     <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.”</p>
                     <div class="testi_holder">
                         <figure><img src="images/t1.png" alt="dummy image"></figure>
@@ -22,7 +22,7 @@
                     </div>
                     
                 </section>
-                <section  class="wow fadeInRight" data-wow-duration="3000ms">
+                <section  class="wow zoomIn" data-wow-duration="3000ms">
                     <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.”</p>
                     <div class="testi_holder">
                         <figure><img src="images/t2.png" alt="dummy image"></figure>
@@ -30,6 +30,45 @@
                     </div>
                     
                 </section>
+
+                <section  class="wow zoomIn" data-wow-duration="3000ms">
+                    <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.”</p>
+                    <div class="testi_holder">
+                        <figure><img src="images/t2.png" alt="dummy image"></figure>
+                        <h2>Baby Koren Perez<span> Spoiled Fur Baby</span></h2>
+                    </div>
+                    
+                </section>
+
+                <section  class="wow zoomIn" data-wow-duration="3000ms">
+                    <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.”</p>
+                    <div class="testi_holder">
+                        <figure><img src="images/t2.png" alt="dummy image"></figure>
+                        <h2>Baby Koren Perez<span> Spoiled Fur Baby</span></h2>
+                    </div>
+                    
+                </section>
+
+
+                <section  class="wow zoomIn" data-wow-duration="3000ms">
+                    <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.”</p>
+                    <div class="testi_holder">
+                        <figure><img src="images/t2.png" alt="dummy image"></figure>
+                        <h2>Baby Koren Perez<span> Spoiled Fur Baby</span></h2>
+                    </div>
+                    
+                </section>
+
+
+                <section  class="wow zoomIn" data-wow-duration="3000ms">
+                    <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.”</p>
+                    <div class="testi_holder">
+                        <figure><img src="images/t2.png" alt="dummy image"></figure>
+                        <h2>Baby Koren Perez<span> Spoiled Fur Baby</span></h2>
+                    </div>
+                    
+                </section>
+
 
             </div>
             </div>
